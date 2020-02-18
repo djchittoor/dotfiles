@@ -21,7 +21,7 @@ font-4 = FontAwesome 5 Free:style=Solid:size=10;0
 font-5 = FontAwesome 5 Brands:style=Regular:size=10;0
 
 modules-left = powermenu
-modules-right = pulseaudio backlight wireless-network wired-network battery date
+modules-right = pulseaudio wireless-network wired-network battery date
 
 [bar/bottom]
 monitor = 
@@ -50,7 +50,8 @@ font-6 = MaterialIcons:size=10;-1
 font-7 = Termsynu:size=8:antialias=false;0
 
 modules-left = i3
-modules-right = cpu memory
+modules-center = cpu
+modules-right = backlight pulseaudio wireless-network wired-network battery date powermenu
 
 [module/backlight]
 type = internal/xbacklight
@@ -236,7 +237,7 @@ ramp-volume-3 = 
 [module/powermenu]
 type = custom/menu
 
-format-padding = 5
+format-padding = 2
 
 label-open = 
 label-close = 
