@@ -1,0 +1,2 @@
+#! /bin/zsh
+exe=`lsx $path | sort -df | dmenu ${1+"$@"}` && exec $exe
